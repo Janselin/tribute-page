@@ -22,7 +22,7 @@
 .container {
     width: 77%;
     margin: auto;
-    padding: 0 4em;
+    padding: 0 3em 1.4em;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 5px;
 } 
 
@@ -37,8 +37,7 @@
 }
 
 .header__img {
-    margin: auto;
-    /* border: 3px solid yellowgreen; */
+    margin: auto;   
     -webkit-box-shadow: -21px 33px 0px 9px #FFFF67;
     box-shadow: -43px 33px 0px 9px #ffff67;
 }
@@ -109,10 +108,11 @@
  color: #fff;
  letter-spacing: 3px;
  line-height: 1;
- box-shadow: 6px 0px 0px  #ffff67;;
+ box-shadow: 6px 0px 0px  #ffff67;
  outline: transparent;
  position: relative;
- left: 42em;
+ left: 46em;
+ top: 1.4em;
 }
 
 .button::after {
@@ -221,26 +221,64 @@ header__title  {
 
 
 
-
-/*  
- background: conic-gradient(
-    #D9D7F1 12%, 
-    #BAABDA 12%, #BAABDA 33%, 
-    #E7FBBE 33%, #E7FBBE 55%, 
-    #FFCBCB 55%, #FFCBCB 70%, 
-    #B5DEFF 70%, #B5DEFF 87%, 
-    #F7D1BA 87%);
-
+  
 
 @media screen and (max-width:480px) {
 
-    .container,
-    .header__image,    {
+    .container, 
+    .main     
+    {
        width: 90%;
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       align-items: center;
     }
 
+    .header__title {
+        font-size: 1.5em;
+    }
     .container {
-        padding: 0;
+        padding: 0em;
+    }
+
+    .header__caption {
+        width: 100%;
+        padding: 3em 2em 1em;
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .header__img {
+        width: 49%;
+        box-shadow: -11px 16px 0px 7px #ffff67;
+    }
+
+    .main__title {
+        display: inline-block;
+        width: 100%;
+        font-size: 0.8em;
+        /* text-align: justify; */
+        /* padding: 0.3em 3em; */
+    }
+
+    .main__list {
+        padding: 0 0 0 1em;
+    }
+    .main__date {
+        /* padding: 1em; */
+        margin-bottom: 0.3em;
+        font-size: 0.9em;
+    }
+
+    .button, .button::after {        
+    left: 0em;
+            
+    top: 1em;
+    }
+
+    .footer {
+        padding-top: 1em;
     }
 }
 
@@ -250,4 +288,4 @@ header__title  {
 
 @media screen and (min-width: 761px) {
 
-} */
+}
