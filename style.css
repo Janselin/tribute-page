@@ -1,7 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Fredericka+the+Great&family=Libre+Baskerville:wght@700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Poppins:wght@700&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
-
 
 
 
@@ -23,18 +22,18 @@
 .container {
     width: 77%;
     margin: auto;
-    padding: 0 6em;
+    padding: 0 4em;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 5px;
-   
 } 
 
 .header__title {
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
-    background-color:#CCFF66; 
+    background-color:#CCFF66;
     padding: 0 1em;
-   
+    font-weight: 700;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .header__img {
@@ -61,12 +60,16 @@
     text-transform: uppercase;
     font-size: 1.2em;
     text-align: center;
-    background-color:#CCFF66;
+    background-color:#00798C;
     margin-bottom: 2em;
-    padding: 0.3em;
-    /* font-weight: 700; */
-}
+    padding: 0.3em;   
+    color: white;
+  }
 
+
+  .main__list {
+      padding: 0 2.3em;
+  }
 .main__date {
     margin-bottom: 1em;
     list-style: disc;
@@ -96,24 +99,17 @@
 }
 
 
-
-
-
-
-
-
-
 /* From cssbuttons.io by @namecho */
 .button,
 .button::after {
  padding: 16px 20px;
  font-size: 18px;
- background: linear-gradient(45deg, transparent 5%, #721D7B 5%);
+ background: linear-gradient(45deg, transparent 5%, #CF32A3 5%);
  border: 0;
  color: #fff;
  letter-spacing: 3px;
  line-height: 1;
- box-shadow: 6px 0px 0px #FFFF67;
+ box-shadow: 6px 0px 0px  #ffff67;;
  outline: transparent;
  position: relative;
  left: 42em;
@@ -199,3 +195,59 @@
   transform: translate(0);
  }
 }
+
+
+
+header__title  {
+  
+  line-height: 20vmin;
+}
+
+.header__title {
+  color: transparent;
+  background: conic-gradient(
+    #D9D7F1 12%, 
+    #5A0191 12%, #E58D89 33%, 
+    /* #CCFF66 33%, #71B57C 55%,  */
+    #FFCBCB 55%, #FFCBCB 70%, 
+    #00798C 70%, #00798C 87%, 
+    #E58D89 87%);
+  background-size: 50%;
+  background-clip: text;  
+  -webkit-background-clip: text;
+  
+
+}
+
+
+
+
+/*  
+ background: conic-gradient(
+    #D9D7F1 12%, 
+    #BAABDA 12%, #BAABDA 33%, 
+    #E7FBBE 33%, #E7FBBE 55%, 
+    #FFCBCB 55%, #FFCBCB 70%, 
+    #B5DEFF 70%, #B5DEFF 87%, 
+    #F7D1BA 87%);
+
+
+@media screen and (max-width:480px) {
+
+    .container,
+    .header__image,    {
+       width: 90%;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 760px) {
+
+}
+
+@media screen and (min-width: 761px) {
+
+} */
