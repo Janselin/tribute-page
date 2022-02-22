@@ -70,12 +70,12 @@
 .main__list {
       padding: 0 2.3em;
   }
-.main__date {
+.main__quote {
     margin-bottom: 1em;
     list-style: disc;
 }
 
-.main__date::marker {
+.main__quote::marker {
     color: #721D7B;
     font-size: 1.5em;
     font-weight: bold;
@@ -99,7 +99,6 @@
 }
 
 
-/* From cssbuttons.io by @namecho */
 .button,
 .button::after {
  padding: 16px 20px;
@@ -198,12 +197,6 @@
 }
 
 
-
-header__title  {
-  
-  line-height: 20vmin;
-}
-
 .header__title {
   color: transparent;
   background: conic-gradient(
@@ -259,7 +252,7 @@ header__title  {
     .main__list {
         padding: 0 0 0 1em;
     }
-    .main__date {       
+    .main__quote {       
         margin-bottom: 0.3em;
         font-size: 0.9em;
     }
@@ -271,7 +264,7 @@ header__title  {
     }
 
     .footer {
-        padding-top: 1em;
+        padding: 1em 0;
     }
 }
 
